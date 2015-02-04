@@ -1,0 +1,13 @@
+= form_for @photo, :html => { :class => 'form-horizontal', :multipart => true } do |f|
+  .form-group
+    = f.label :image, :class => 'control-label col-md-2'
+    .col-md-10
+      = f.file_field :image
+  .form-group
+    = f.label :tag_line, :class => 'control-label col-md-2'
+    .col-md-10
+      = f.text_field :tag_line, :class => 'text_field form-control'
+  .form-group
+    .col-md-offset-2.col-md-10
+      = f.submit nil, :class => 'btn btn-primary'
+      = link_to t('.cancel', :default => t("helpers.links.cancel")), photos_path, :class => 'btn btn-default'

@@ -1,0 +1,8 @@
+= link_to "Create New Album", new_album_path, :class => 'btn btn-primary'
+- unless @photo.blank?
+  %table.table.table-striped
+    %tbody
+      - @photo.each do |photo|
+        %tr
+          %td= link_to (image_tag photo.image_url(:thumb).to_s), album_path(Album.find(photo.album_id))
+          %td Uploaded by #{(User.find((Album.find(photo.album_id)).user_id)).email}

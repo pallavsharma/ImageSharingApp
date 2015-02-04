@@ -38,3 +38,24 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Use Bootstrap-sass for frontend
+gem 'bootstrap-sass-extras'
+gem 'bootstrap-sass'
+
+# Use Carrierwave for uploading files
+gem 'carrierwave'
+
+# Use Devise for authertication
+gem 'devise'
+
+# Use Html2Haml for Converting html to haml
+gem 'html2haml'
+
+# Use for Haml
+gem 'haml'
+
+# Use for Postgresql
+gem 'pg'
+
+# Use RMagick for image processing
+gem 'rmagick'
